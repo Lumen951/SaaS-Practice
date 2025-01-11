@@ -1,0 +1,188 @@
+<!DOCTYPE html> <!-- <!DOCTYPE html> 就是告诉浏览器"这是一个HTML5文档，请用现代标准的方式来解析它"。 -->
+<html lang="zh"> <!-- lang 属性用于指定页面的语言，这里是中文。 -->
+<head>
+    <meta charset="UTF-8"> <!-- meta 标签用于设置字符编码，这里是UTF-8。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- meta 标签用于设置视口，这里是设备宽度，初始缩放比例为1。 -->
+    <title>HTML完整教程</title> <!-- title 标签用于设置页面的标题。 -->
+    <style> /* style 标签用于设置页面的样式。 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        /* CSS样式：设置页面的字体、外边距、行高 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        /* CSS样式：设置表格的边框、宽度、外边距 */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 15px 0;
+        }
+        /* CSS样式：设置表格的边框、内边距、文本对齐方式 */
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        /* CSS样式：设置语义化标签的边框、内边距、外边距 */
+        .semantic-section {
+            border: 1px solid #eee;
+            padding: 15px;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>  <!-- body 标签用于设置页面的主体内容。 -->
+    <!-- 语义化标签示例 -->
+    <header style="background: linear-gradient(45deg, #000, #333); color: #0ff; padding: 20px; border: 2px solid #0ff; box-shadow: 0 0 20px #0ff;">
+        <h1 style="font-family: 'Orbitron', sans-serif; text-transform: uppercase; text-shadow: 0 0 10px #0ff; margin: 0; letter-spacing: 3px;">HTML完整教程_v2.0</h1>   <!-- h1 标签用于设置页面的主标题。 -->
+        <nav style="margin-top: 20px;">
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; gap: 20px;">
+                <li><a href="#basic" style="color: #0ff; text-decoration: none; border: 1px solid #0ff; padding: 8px 15px; transition: all 0.3s; background: rgba(0,255,255,0.1);">基础标签_01</a></li> <!-- li 标签用于设置列表项。 -->
+                <li><a href="#semantic" style="color: #0ff; text-decoration: none; border: 1px solid #0ff; padding: 8px 15px; transition: all 0.3s; background: rgba(0,255,255,0.1);">语义化标签_02</a></li> <!-- a 标签用于设置超链接。 -->
+                <li><a href="#media" style="color: #0ff; text-decoration: none; border: 1px solid #0ff; padding: 8px 15px; transition: all 0.3s; background: rgba(0,255,255,0.1);">媒体标签_03</a></li> <!-- a 标签用于设置超链接。 -->
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container" style="background: #000; color: #0ff; font-family: 'Orbitron', sans-serif;">
+        <!-- 基础文本标签 -->
+        <section id="basic" style="border: 2px solid #0ff; padding: 20px; margin: 20px 0; box-shadow: 0 0 15px #0ff;">
+            <h2 style="text-transform: uppercase; text-shadow: 0 0 10px #0ff;">文本标签示例</h2>
+            <h3 style="color: #f0f;">这是h3标题</h3>
+            <p style="border-left: 4px solid #0ff; padding-left: 10px;">这是一个段落，包含<strong style="color: #f0f;">加粗文本</strong>和<em style="color: #0f0;">斜体文本</em>。</p>
+            <span style="background: rgba(0,255,255,0.1); padding: 5px 10px; border: 1px solid #0ff;">这是span内联文本</span>
+        </section>
+
+        <!-- 列表示例 -->
+        <section style="border: 2px solid #0ff; padding: 20px; margin: 20px 0; box-shadow: 0 0 15px #0ff;">
+            <h2 style="text-transform: uppercase; text-shadow: 0 0 10px #0ff;">列表示例</h2>
+            <h3 style="color: #f0f;">有序列表：</h3>
+            <ol style="list-style-type: decimal-leading-zero;">
+                <li style="border-bottom: 1px solid #0ff; padding: 10px 0;">第一项</li>
+                <li style="border-bottom: 1px solid #0ff; padding: 10px 0;">第二项</li>
+            </ol>
+            <h3 style="color: #f0f;">无序列表：</h3>
+            <ul style="list-style: none;">
+                <li style="border-left: 4px solid #0ff; padding: 10px; margin: 10px 0; background: rgba(0,255,255,0.1);">项目一</li>
+                <li style="border-left: 4px solid #0ff; padding: 10px; margin: 10px 0; background: rgba(0,255,255,0.1);">项目二</li>
+            </ul>
+        </section>
+
+        <!-- 表格示例 -->
+        <section style="border: 2px solid #0ff; padding: 20px; margin: 20px 0; box-shadow: 0 0 15px #0ff;">
+            <h2 style="text-transform: uppercase; text-shadow: 0 0 10px #0ff;">表格示例</h2>
+            <table style="border: 1px solid #0ff; background: rgba(0,255,255,0.05);">
+                <thead>
+                    <tr>
+                        <th style="border: 1px solid #0ff; padding: 15px; background: rgba(0,255,255,0.2);">表头1</th>
+                        <th style="border: 1px solid #0ff; padding: 15px; background: rgba(0,255,255,0.2);">表头2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="border: 1px solid #0ff; padding: 15px;">数据1</td>
+                        <td style="border: 1px solid #0ff; padding: 15px;">数据2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 表单示例 -->
+        <section style="border: 2px solid #0ff; padding: 20px; margin: 20px 0; box-shadow: 0 0 15px #0ff;">
+            <h2 style="text-transform: uppercase; text-shadow: 0 0 10px #0ff;">表单示例</h2>
+            <form action="#" method="post" style="background: rgba(0,255,255,0.05); padding: 20px;">
+                <!-- 文本输入 -->
+                <div style="margin: 20px 0;">
+                    <label for="username" style="color: #0ff; display: block; margin-bottom: 10px;">用户名：</label>
+                    <input type="text" id="username" name="username" 
+                           placeholder="请输入用户名" required 
+                           style="background: #000; border: 1px solid #0ff; color: #0ff; padding: 10px; width: 100%; outline: none;">
+                </div>
+
+                <!-- 下拉选择 -->
+                <div style="margin: 20px 0;">
+                    <label for="city" style="color: #0ff; display: block; margin-bottom: 10px;">城市：</label>
+                    <select id="city" name="city" style="background: #000; border: 1px solid #0ff; color: #0ff; padding: 10px; width: 100%;">
+                        <option value="beijing">北京</option>
+                        <option value="shanghai">上海</option>
+                    </select>
+                </div>
+
+                <!-- 文本区域 -->
+                <div style="margin: 20px 0;">
+                    <label for="message" style="color: #0ff; display: block; margin-bottom: 10px;">留言：</label>
+                    <textarea id="message" name="message" 
+                              rows="4" cols="50" 
+                              style="background: #000; border: 1px solid #0ff; color: #0ff; padding: 10px; width: 100%; outline: none;"></textarea>
+                </div>
+
+                <button type="submit" style="background: #0ff; color: #000; border: none; padding: 10px 20px; cursor: pointer; text-transform: uppercase; font-weight: bold; transition: all 0.3s;">提交</button>
+            </form>
+        </section>
+
+        <!-- HTML5语义化标签 -->
+        <section id="semantic" class="semantic-section" style="border: 2px solid #0ff; padding: 20px; margin: 20px 0; box-shadow: 0 0 15px #0ff;">
+            <article style="background: rgba(0,255,255,0.05); padding: 20px; margin-bottom: 20px;">
+                <h2 style="text-transform: uppercase; text-shadow: 0 0 10px #0ff;">文章标题</h2>
+                <p style="border-left: 4px solid #0ff; padding-left: 10px;">这是文章内容...</p>
+            </article>
+            <aside style="background: rgba(255,0,255,0.05); padding: 20px;">
+                <h3 style="color: #f0f;">侧边栏</h3>
+                <p style="border-left: 4px solid #f0f; padding-left: 10px;">补充信息...</p>
+            </aside>
+        </section>
+
+        <!-- HTML5媒体标签 -->
+        <section id="media" style="border: 2px solid #0ff; padding: 20px; margin: 20px 0; box-shadow: 0 0 15px #0ff;">
+            <h2 style="text-transform: uppercase; text-shadow: 0 0 10px #0ff;">媒体标签示例</h2>
+            <!-- 音频 -->
+            <audio controls style="width: 100%; margin: 20px 0;">
+                <source src="《Think Different》.mp3" type="audio/mpeg">
+                您的浏览器不支持音频标签
+            </audio>
+
+            <!-- 视频 -->   
+            <video width="1240" height="1080" controls autoplay style="width: 100%; border: 2px solid #0ff; margin: 20px 0;">
+                <source src="《了不起的设计》.mp4" type="video/mp4">
+                您的浏览器不支持视频标签
+            </video>
+
+            <!-- Canvas -->
+            <canvas id="myCanvas" width="200" height="100">
+                您的浏览器不支持Canvas
+            </canvas>
+            
+            <script>    /* 使用JavaScript在Canvas上绘制移动的方块 */
+                const canvas = document.getElementById('myCanvas');
+                const ctx = canvas.getContext('2d');
+                let x = 0;
+            
+                function animate() {
+                    // 清除画布
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    
+                    // 绘制移动的方块
+                    ctx.fillStyle = '#0ff';
+                    ctx.fillRect(x, 40, 20, 20);
+                    
+                    // 更新位置
+                    x = (x + 2) % canvas.width;
+                    
+                    // 循环动画
+                    requestAnimationFrame(animate);
+                }
+            
+                animate();
+            </script>
+        </section>
+    </main>
+
+    <footer style="background: linear-gradient(45deg, #000, #333); border-top: 2px solid #0ff; padding: 20px; text-align: center; margin-top: 40px;">
+        <p style="color: #0ff; text-shadow: 0 0 5px #0ff;">&copy; 2024 赛博朋克风格页脚</p>
+    </footer>
+</body>
+</html>
