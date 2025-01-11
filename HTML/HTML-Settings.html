@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML属性示例</title>
+    <style>
+        /* 用于演示class选择器 */
+        .highlight {
+            background-color: yellow;
+        }
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. 全局属性演示 -->
+    <section>
+        <h2>全局属性示例</h2>
+        
+        <!-- id属性：唯一标识符 -->
+        <div id="uniqueId">这是使用id属性的元素</div>
+        
+        <!-- class属性：可重用的样式类 -->
+        <p class="highlight text-center">这段文字使用了两个class</p>
+        
+        <!-- style属性：行内样式 -->
+        <p style="color: blue; font-size: 18px;">这段文字使用了行内样式</p>
+        
+        <!-- data-*属性：自定义数据属性 -->
+        <button data-user-id="123" data-role="admin">
+            自定义数据属性按钮
+        </button>
+    </section>
+
+    <!-- 2. 常用属性演示 -->
+    <section>
+        <h2>常用属性示例</h2>
+        
+        <!-- src属性：指定资源路径 -->
+        <img src="example.jpg" 
+             alt="示例图片"  <!-- alt属性：图片替代文本 -->
+             title="这是一张示例图片"> <!-- title属性：鼠标悬停提示 -->
+        
+        <!-- href属性：超链接地址 -->
+        <a href="https://www.example.com" title="访问示例网站">
+            示例链接
+        </a>
+        
+        <!-- 表单属性演示 -->
+        <form>
+            <!-- placeholder属性：输入提示 -->
+            <!-- required属性：必填字段 -->
+            <input type="text" 
+                   placeholder="请输入用户名" 
+                   required>
+            
+            <!-- disabled属性：禁用元素 -->
+            <input type="text" 
+                   value="禁用的输入框" 
+                   disabled>
+            
+            <!-- readonly属性：只读属性 -->
+            <input type="text" 
+                   value="只读内容" 
+                   readonly>
+        </form>
+    </section>
+
+    <!-- 3. 属性使用示例 -->
+    <script>
+        // 通过id获取元素
+        const element = document.getElementById('uniqueId');
+        
+        // 获取自定义数据属性
+        const button = document.querySelector('button');
+        const userId = button.dataset.userId;
+        const role = button.dataset.role;
+        
+        console.log('用户ID:', userId);
+        console.log('角色:', role);
+    </script>
+</body>
+</html>
